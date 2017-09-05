@@ -1,18 +1,17 @@
-# Farmers Market
+# The Market Place
 
-Farmers Market is a place for people to exchange goods. The objective for the user is to buy low and sell high. A leaderboard page displays the ranking of users who are currently playing the game.
+The Market Place is a place for people to exchange goods. The objective for the user is to buy low and sell high. A leaderboard page displays the ranking of users who are currently playing the game.
 
 ## Technologies
 
-- Mongo, Express, Angular, Node, Grunt, ES6, Babel
+- Mongo, Express, AngularJS, Node, ES6
 
 ## Setup
 
 > Make sure mongo is running in an open tab
 
 - `npm install`
-- `grunt` - _Leave this running in it's own tab_
-- `npm start` - _Create a new tab for this_
+- `npm start`
 
 All client work should be done in the `client/` directory and all server work should be done in the `server/` directory. Files in the `server/public/` directory should **not** be modified directly.
 
