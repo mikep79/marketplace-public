@@ -13,8 +13,6 @@ The Market Place is a place for people to exchange goods. The objective for the 
 - `npm install`
 - `npm start`
 
-All client work should be done in the `client/` directory and all server work should be done in the `server/` directory. Files in the `server/public/` directory should **not** be modified directly.
-
 ## Base Functionality
 
 > Document your project and your code as you go!
