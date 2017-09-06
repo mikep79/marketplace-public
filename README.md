@@ -2,7 +2,7 @@
 
 The Market is a place for people to exchange goods. The objective for the user is to buy low and sell high. A leaderboard page displays the ranking of users who are currently playing the game.
 
-For this challenge, you will be working to create an experience that is 'game-like'. Specifically, you will be creating an interface for users to 'buy' from a list of items. The prices for each of the items will be displayed and as the user buys an item, money will be deducted from their account in exchange for one of those items. That item is kept in a player inventory. Additionally, every 10 seconds, the prices of those items will change. The player will also be allowed to 'sell' items from their inventory in exchange for the current price of the item.  This will give the player to buy the items at one price, and then sell at another.
+For this challenge, you will be working to create an experience that is 'game-like'. Specifically, you will be creating an interface for users to 'buy' from a list of items. The prices for each of the items will be displayed and as the user buys an item, money will be deducted from their account in exchange for one of those items. That item is kept in a player inventory. Additionally, every 10 seconds, the prices of those items will change. The player will also be allowed to 'sell' items from their inventory in exchange for the current price of the item.  This will give the player the ability to buy the items at one price, and then sell at another. (Buy Low, Sell High!)
 
 When the application loads, you will need to have information for each of the commodities, specifically the **name** 
 and the **market price** of each. This information will need to be displayed in a meaningful way on the DOM.
