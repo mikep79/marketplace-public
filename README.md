@@ -23,7 +23,7 @@ See the array in the `market.router.js` file. Items are returned by the `/market
 
 ## Technologies
 
-- Mongo, Express, AngularJS, Node, ES6
+- Mongo, Express, AngularJS, Node
 
 ## Setup
 
