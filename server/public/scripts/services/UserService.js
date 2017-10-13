@@ -2,9 +2,14 @@ myApp.factory('UserService', ['$http', '$location', function($http, $location){
   console.log('UserService Loaded');
 
   var userObject = {};
+  var priceObj = {
+    data: []
+  };
+
 
   return {
     userObject : userObject,
+    priceObj : priceObj,
 
     getuser : function(){
       console.log('UserService -- getuser');
@@ -32,6 +37,11 @@ myApp.factory('UserService', ['$http', '$location', function($http, $location){
         console.log('UserService -- logout -- logged out');
         $location.path("/home");
       });
+    },
+    startPrice : function(){
+      console.log('startPrice');
     }
   };
+
+
 }]);
