@@ -11,13 +11,16 @@ myApp.factory('UserService', ['$http', '$location', function($http, $location){
     userObject : userObject,
     marketItems : marketItems,
 
+
     getMarket : function(){
       // console.log('marketItems function works')
       $http.get('/market/items').then(function(response) {
-        console.log('marketItems response', response);
+        // console.log('marketItems response', response);
         marketItems.data = response.data;
       })        
     },    
+
+  
 
     getuser : function(){
       console.log('UserService -- getuser');

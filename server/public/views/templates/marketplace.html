@@ -6,7 +6,7 @@
     
     <div ng-repeat='item in mc.marketItems.data'>
         <p>{{item.name}}</p>
-        <p>{{item.cost}}</p>
+        <p>{{item.cost | currency : $}}</p>
         <!-- ^^ this will be affected by random # function -->
         <button ng-click="mc.buyFruit()">Buy</button>
         <button ng-click="mc.sellFruit()">Sale</button>
