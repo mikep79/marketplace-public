@@ -25,14 +25,19 @@ var marketItems = [
   {id: 10, name: 'Kumquat', cost: 19.99}
 ];
 
-var fruitPrice = function() {
-  return Math.round(Math.random()*((49.49) + 0.50)*100)/100;
+var priceChanger = function() {
+  let priceChange = Math.ceil(Math.random()*14) * 0.01;
+  let positiveNegative = Math.round(Math.random());
+  if (positiveNegative == 0) {
+    priceChange = -(priceChange);
+  }
+  return priceChange
 };
 
 
 
 for (var i = 0; i<marketItems.length; i++) {
-  marketItems[i].cost = fruitPrice();
+  marketItems[i].cost += priceChanger();
   console.log('new fruit price is', marketItems[i]);
 }
 
