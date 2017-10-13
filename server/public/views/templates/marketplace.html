@@ -7,10 +7,10 @@
     <div ng-repeat='item in mc.marketItems.data'>
         <p>{{item.name}}</p>
         <p>{{item.cost}}</p>
+        <!-- ^^ this will be affected by random # function -->
+        <button ng-click="mc.buyFruit()">Buy</button>
+        <button ng-click="mc.sellFruit()">Sale</button>
       </div>
-
-    <button>Buy</button>
-    <button>Sale</button>
 
     <div>Basket Count</div>
   </div>

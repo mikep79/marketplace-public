@@ -12,6 +12,13 @@ myApp.controller('MarketController', ['UserService' ,function(UserService) {
     console.log('controller', vm.marketItems);
   };
   
+  vm.buyFruit = function(){
+    //do stuff here
+  };
+
+  vm.sellFruit = function(){
+    //do stuff here
+  };
   
 
 }]);

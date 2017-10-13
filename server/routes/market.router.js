@@ -20,10 +20,21 @@ var marketItems = [
   {id: 5, name: 'Orange', cost: 0.89},
   {id: 6, name: 'Pepper', cost: 1.29},
   {id: 7, name: 'Lettuce', cost: 2.99},
-  {id: 8, name: 'Basket', cost: 5.99},
-  {id: 9, name: 'Apron', cost: 19.99},
+  {id: 8, name: 'Papaya', cost: 5.99},
+  {id: 9, name: 'Durian', cost: 19.99},
   {id: 10, name: 'Kumquat', cost: 19.99}
 ];
+
+var fruitPrice = function() {
+  return Math.round(Math.random()*((49.49) + 0.50)*100)/100;
+};
+
+
+
+for (var i = 0; i<marketItems.length; i++) {
+  marketItems[i].cost = fruitPrice();
+  console.log('new fruit price is', marketItems[i]);
+}
 
 /**
  * Route serving market items
