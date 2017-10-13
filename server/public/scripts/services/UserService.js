@@ -2,14 +2,22 @@ myApp.factory('UserService', ['$http', '$location', function($http, $location){
   console.log('UserService Loaded');
 
   var userObject = {};
-  var priceObj = {
+  var marketItems = {
     data: []
   };
 
 
   return {
     userObject : userObject,
-    priceObj : priceObj,
+    marketItems : marketItems,
+
+    getMarket : function(){
+      // console.log('marketItems function works')
+      $http.get('/market/items').then(function(response) {
+        console.log('marketItems response', response);
+        marketItems.data = response.data;
+      })        
+    },    
 
     getuser : function(){
       console.log('UserService -- getuser');

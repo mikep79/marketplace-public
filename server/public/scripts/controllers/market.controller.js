@@ -3,12 +3,15 @@ myApp.controller('MarketController', ['UserService' ,function(UserService) {
   var vm = this;
   vm.userService = UserService;
   vm.userObject = UserService.userObject;
+  vm.marketItems = UserService.marketItems;
 
-  vm.startPrice = function(){
-    UserService.startPrice();
-    vm.priceObj = UserService.priceObj;
-    console.log(vm.priceObj);
-    
+
+  vm.getMarketItems = function(){
+    UserService.getMarket();
+    // vm.marketItems = UserService.marketItems;
+    console.log('controller', vm.marketItems);
   };
   
+  
+
 }]);

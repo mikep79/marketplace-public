@@ -1,12 +1,13 @@
-<div ng-include="'views/partials/nav.html'" ng-init="mc.startPrice()"></div>
+<div ng-include="'views/partials/nav.html'" ng-init="mc.getMarketItems()"></div>
 <div class="container">
   <div class="content">
     <h2>Marketplace</h2>
     <h3 id="welcome" class="lead">Welcome, {{mc.userObject.userName}}! You have ${{mc.userObject.money}} to spend.</h3>
-
- 
-    <p>kumquat</p>
-    <div ng-repeat="price in mc.priceObj.data" >${{ price }}? </div>
+    
+    <div ng-repeat='item in mc.marketItems.data'>
+        <p>{{item.name}}</p>
+        <p>{{item.cost}}</p>
+      </div>
 
     <button>Buy</button>
     <button>Sale</button>
