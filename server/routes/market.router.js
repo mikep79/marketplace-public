@@ -19,10 +19,10 @@ var marketItems = [
   { id: 4, name: 'Flowers', cost: 8.99 },
   { id: 5, name: 'Orange', cost: 0.89 },
   { id: 6, name: 'Pepper', cost: 1.29 },
-  { id: 7, name: 'Lettuce', cost: 2.99 },
-  { id: 8, name: 'Papaya', cost: 5.99 },
-  { id: 9, name: 'Durian', cost: 19.99 },
-  { id: 10, name: 'Kumquat', cost: 19.99 }
+  // { id: 7, name: 'Lettuce', cost: 2.99 },
+  // { id: 8, name: 'Papaya', cost: 5.99 },
+  // { id: 9, name: 'Durian', cost: 19.99 },
+  // { id: 10, name: 'Kumquat', cost: 19.99 }
 ];
 
 var priceChanger = function () {

@@ -12,10 +12,10 @@ a {
   color: #FB8E89;
 }
 
-.instructions .container h1 {
+/* .instructions .container h1 {
     font-size: 32px;
     font-weight: 600;
-}
+} */
 
 .instructions {
     background-color: #564B3D;
@@ -63,7 +63,6 @@ a {
   background-color: #A4B76E;
   width: 100%;
   border-radius: 0px;
-
 }
 
 ul {
@@ -80,7 +79,7 @@ li {
 li a {
     display: block;
     color: #564B3D;
-    font-size: 1.5em;
+    font-size: 12pt;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -91,4 +90,16 @@ li a {
 li a:hover {
     text-decoration: underline;
     color: #564B3D;
+}
+
+/* added */
+.item-block{
+    float: left;
+    margin: 20px;
+    width: 200px;    
+}
+
+#title{
+    font-family: 'Fredoka One', cursive;
+    font-size: 20pt;
 }

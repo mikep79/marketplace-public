@@ -8,8 +8,7 @@ myApp.controller('MarketController', ['UserService','$interval' ,function(UserSe
 
   vm.getMarketItems = function(){
     UserService.getMarket();
-    // vm.marketItems = UserService.marketItems;
-    // console.log('controller', vm.marketItems);
+    console.log('controller market items: ', vm.marketItems);
   };
   
   $interval(vm.getMarketItems,8000);

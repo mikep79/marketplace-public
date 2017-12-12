@@ -1,17 +1,17 @@
 <div ng-include="'views/partials/nav.html'" ng-init="mc.getMarketItems()"></div>
 <div class="container">
   <div class="content">
-    <h2>Marketplace</h2>
     <h3 id="welcome" class="lead">Welcome, {{mc.userObject.userName}}! You have {{mc.userObject.money | currency : $}} to spend.</h3>
-    
-    <div ng-repeat='item in mc.marketItems.data'>
-        <p>{{item.name}}</p>
-        <p>{{item.cost | currency : $}}</p>
-        <!-- ^^ this will be affected by random # function -->
-        <button ng-click="mc.buyFruit(item.cost)">Buy</button>
-        <button ng-click="mc.sellFruit(item.cost)">Sale</button>
-      </div>
 
-    <div>Basket Count</div>
+    <div class="item-block" ng-repeat='item in mc.marketItems.data'>
+      <!-- <p>{{item.name}}</p> -->
+      <p>{{item.cost | currency : $}}</p>
+      <p>
+        <img ng-src="images/{{ item.name }}.png" height="100px" />
+      </p>
+      <!-- ^^ this will be affected by random # function -->
+      <button ng-click="mc.buyFruit(item.cost)">Buy</button>
+      <button ng-click="mc.sellFruit(item.cost)">Sale</button>
+    </div>
   </div>
 </div>
