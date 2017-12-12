@@ -2,14 +2,14 @@
 <div class="container">
   <div class="content">
     <h2>Marketplace</h2>
-    <h3 id="welcome" class="lead">Welcome, {{mc.userObject.userName}}! You have ${{mc.userObject.money}} to spend.</h3>
+    <h3 id="welcome" class="lead">Welcome, {{mc.userObject.userName}}! You have {{mc.userObject.money | currency : $}} to spend.</h3>
     
     <div ng-repeat='item in mc.marketItems.data'>
         <p>{{item.name}}</p>
         <p>{{item.cost | currency : $}}</p>
         <!-- ^^ this will be affected by random # function -->
-        <button ng-click="mc.buyFruit()">Buy</button>
-        <button ng-click="mc.sellFruit()">Sale</button>
+        <button ng-click="mc.buyFruit(item.cost)">Buy</button>
+        <button ng-click="mc.sellFruit(item.cost)">Sale</button>
       </div>
 
     <div>Basket Count</div>

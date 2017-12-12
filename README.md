@@ -37,10 +37,10 @@ See the array in the `market.router.js` file. Items are returned by the `/market
 > Document your project and your code as you go!
 
 - [x] Ability to register and log in
-- [ ] Display a list of available items to purchase on the Marketplace page
-- [ ] Ability to buy or sell items available for purchase
-- [ ] Server should randomly change product prices (within a 1 - 15 cent range) every 10 seconds for each product
-- [ ] Client will check for updates every 8 seconds
+- [x] Display a list of available items to purchase on the Marketplace page
+- [x] Ability to buy or sell items available for purchase
+- [x] Server should randomly change product prices (within a 1 - 15 cent range) every 10 seconds for each product
+- [x] Client will check for updates every 8 seconds
 - [ ] Leaderboard page that displays the top 10 users ranked by the most cash on hand
 - [ ] Leaderboard is refreshed every 10 seconds automatically
 

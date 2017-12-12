@@ -15,12 +15,14 @@ myApp.controller('MarketController', ['UserService','$interval' ,function(UserSe
   $interval(vm.getMarketItems,8000);
   
 
-  vm.buyFruit = function(){
-    //do stuff here
+  vm.buyFruit = function(itemCost){
+    // console.log('Item cost: ', itemCost);
+    vm.userObject.money = vm.userObject.money - itemCost;
   };
 
-  vm.sellFruit = function(){
-    //do stuff here
+  vm.sellFruit = function(itemCost){
+    // console.log('Item cost: ', itemCost);
+    vm.userObject.money = vm.userObject.money + itemCost;
   };
   
 
