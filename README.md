@@ -3,7 +3,7 @@ The Market Place is a game app that allows a player to register and login, and p
 
 <br>
 <p>
-<img src="public/images/pic1.png" width="450px" />
+<img src="images/pic1.png" width="450px" />
 </p>
 <br>
 
