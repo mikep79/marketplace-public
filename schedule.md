@@ -41,13 +41,17 @@ See the array in the `market.router.js` file. Items are returned by the `/market
 - [x] Ability to buy or sell items available for purchase
 - [x] Server should randomly change product prices (within a 1 - 15 cent range) every 10 seconds for each product
 - [x] Client will check for updates every 8 seconds
+- [x] Correct error of item price going below $0.00.
+- [x] Change price set to between .50 and 4.99.
+- [ ] Create database for high scores.
+- [ ] Create DOM display of high scores in leaderboard.
 - [ ] Leaderboard page that displays the top 10 users ranked by the most cash on hand
 - [ ] Leaderboard is refreshed every 10 seconds automatically
 
 ### Assumptions
 
 - Each item has unlimited quantity
-- Prices for items may not go below 50 cents and may not go above 49 dollars and 99 cents.
+- Prices for items may not go below 50 cents and may not go above 4 dollars and 99 cents.
 - User may not spend more money than they have
 - Players ranked by cash on hand, no need to account for current supply of goods
 - We're using polling so it's possible the client prices will be slightly behind the server, **always use the server price when completing a transaction**
