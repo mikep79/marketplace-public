@@ -48,10 +48,11 @@ See the array in the `market.router.js` file. Items are returned by the `/market
 - [x] Write GET call for high score.
 - [x] Create DOM display of high score.
 - [x] Use updateOne syntax to update high score instead of save().
-- [ ] POST newScore function runs whenever high score is broken.
-- [ ] Create leaderboard page that displays the top 10 high scores.
-- [ ] Leaderboard is refreshed every 10 seconds automatically
+- [x] POST newScore function runs whenever high score is broken (if statement under sell function).
+- [ ] Style high score display, integrate ng Material.
 - [ ] Add time limit to game.
+- [ ] Add time stamp to high score postings.
+- [ ] Host on Heroku
 
 ### Assumptions
 
@@ -63,12 +64,12 @@ See the array in the `market.router.js` file. Items are returned by the `/market
 
 ## Stretch Goals
 
-- [ ] Add time stamp to high score postings.
+- [ ] Add a sell all inventory button
+- [ ] Create leaderboard page that displays the top 10 high scores.
+- [ ] Leaderboard is refreshed every 10 seconds automatically
 - [ ] Leaderboard should take into account current inventory
 - [ ] Market items should be moved from an array into the database
 - [ ] Use Angular Material to layout and style your content
-- [ ] Add a sell all inventory button
-- [ ] Host on Heroku
 - [ ] Each market item should have a limited inventory
 
 ## Documentation

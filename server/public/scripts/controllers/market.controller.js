@@ -1,5 +1,5 @@
 myApp.controller('MarketController', ['UserService', '$interval', function (UserService, $interval) {
-  console.log('MarketController created');
+  // console.log('MarketController created');
   var vm = this;
   vm.userService = UserService;
   vm.userObject = UserService.userObject;
@@ -45,7 +45,7 @@ myApp.controller('MarketController', ['UserService', '$interval', function (User
   // get new prices every 8 seconds
   vm.getMarketItems = function () {
     UserService.getMarket();
-    console.log('controller market items: ', vm.marketItems);
+    // console.log('controller market items: ', vm.marketItems);
   };
 
   $interval(vm.getMarketItems, 8000);
@@ -76,16 +76,23 @@ myApp.controller('MarketController', ['UserService', '$interval', function (User
       // decrement quantity of given fruit
       vm.quantity[id]--;
     }
+    if (vm.userObject.money > vm.scoreObject.data[0].score){
+      vm.postScore(vm.userObject.money);
+    }
   };
 
   vm.postScore = function(score){
     console.log('Score: ', score);
     UserService.postScore(score);
+    vm.showScore();
   };
 
   vm.showScore = function(){
     // console.log('ShowScore func called');
     UserService.getScore();
   };
+
+  // call on page load
+  vm.showScore();
 
 }]);
