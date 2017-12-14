@@ -45,9 +45,14 @@ See the array in the `market.router.js` file. Items are returned by the `/market
 - [x] Change price set to between .50 and 4.99.
 - [x] Post score functionality.
 - [x] Post score to database, write schema for scores in new document.
-- [ ] Create DOM display of high scores in leaderboard.
-- [ ] Leaderboard page that displays the top 10 users ranked by the most cash on hand
+- [x] Write GET call for high score.
+- [x] Create DOM display of high score.
+dbEvents.updateOne({ _id: req.params.id }, { $inc: { count: -1 } }, function (err)
+- [ ] Use above syntax to update high score instead of save().
+- [ ] POST newScore function runs whenever high score is broken.
+- [ ] Create leaderboard page that displays the top 10 high scores.
 - [ ] Leaderboard is refreshed every 10 seconds automatically
+- [ ] Add time limit to game.
 
 ### Assumptions
 

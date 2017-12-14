@@ -5,10 +5,14 @@ myApp.factory('UserService', ['$http', '$location', function($http, $location){
   var marketItems = {
     data: []
   };
+  var scoreObject = {
+    data: []
+  };
 
   return {
     userObject : userObject,
     marketItems : marketItems,
+    scoreObject : scoreObject,
 
     getMarket : function(){
       // console.log('marketItems function works')
@@ -55,7 +59,14 @@ myApp.factory('UserService', ['$http', '$location', function($http, $location){
         data: score
       };
       $http.post('/score', newScore).then(function(response) {
-        console.log('Response from postScore call: ', response);
+        // console.log('Response from postScore call: ', response);
+      });
+    },
+
+    getScore : function(){
+      $http.get('/score').then(function(response){
+        console.log('Response from getScore call: ', response);
+        scoreObject.data = response.data;
       });
     }
 

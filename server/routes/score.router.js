@@ -15,8 +15,20 @@ router.post('/', function (req, res) {
     newScore.save(function (err) {
         if (err) {
             console.log('Post Score error: ', err);
+            res.sendStatus(500);
         } else {
             res.sendStatus(202);
+        }
+    });
+});
+
+router.get('/', function(req, res){
+    dbScore.find({}, function(err, results){
+        if (err) {
+            console.log('Get Score error: ', err);
+            res.sendStatus(500);
+        } else {
+            res.send(results);
         }
     });
 });

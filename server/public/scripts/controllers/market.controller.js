@@ -4,6 +4,7 @@ myApp.controller('MarketController', ['UserService', '$interval', function (User
   vm.userService = UserService;
   vm.userObject = UserService.userObject;
   vm.marketItems = UserService.marketItems;
+  vm.scoreObject = UserService.scoreObject;
   // current quantity
   vm.quantity = {
     1: 0,
@@ -78,8 +79,13 @@ myApp.controller('MarketController', ['UserService', '$interval', function (User
   };
 
   vm.postScore = function(score){
-    // console.log('Score: ', score);
+    console.log('Score: ', score);
     UserService.postScore(score);
+  };
+
+  vm.showScore = function(){
+    // console.log('ShowScore func called');
+    UserService.getScore();
   };
 
 }]);
