@@ -44,7 +44,7 @@ See the array in the `market.router.js` file. Items are returned by the `/market
 - [x] Correct error of item price going below $0.00.
 - [x] Change price set to between .50 and 4.99.
 - [x] Post score functionality.
-- [ ] Post score to database, write schema for scores in new document.
+- [x] Post score to database, write schema for scores in new document.
 - [ ] Create DOM display of high scores in leaderboard.
 - [ ] Leaderboard page that displays the top 10 users ranked by the most cash on hand
 - [ ] Leaderboard is refreshed every 10 seconds automatically
@@ -59,6 +59,7 @@ See the array in the `market.router.js` file. Items are returned by the `/market
 
 ## Stretch Goals
 
+- [ ] Add time stamp to high score postings.
 - [ ] Leaderboard should take into account current inventory
 - [ ] Market items should be moved from an array into the database
 - [ ] Use Angular Material to layout and style your content
