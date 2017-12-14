@@ -9,9 +9,17 @@
       <p>
         <img ng-src="images/{{ item.name }}.png" height="100px" />
       </p>
-      <!-- ^^ this will be affected by random # function -->
-      <button ng-click="mc.buyFruit(item.cost)">Buy</button>
-      <button ng-click="mc.sellFruit(item.cost)">Sale</button>
+      <button ng-click="mc.buyFruit(item.cost, item.id)">Buy</button>
+      <button ng-click="mc.sellFruit(item.cost, item.id)">Sell</button>
+      <p>
+        Quantity: {{ mc.quantity[item.id] }}
+      </p>
+      <p>
+        Average: {{ mc.average[item.id] | currency }}
+      </p>
+      <p>
+        Sum: {{ mc.sum[item.id] | currency }}
+      </p>
     </div>
   </div>
 </div>
