@@ -77,5 +77,9 @@ myApp.controller('MarketController', ['UserService', '$interval', function (User
     }
   };
 
+  vm.postScore = function(score){
+    // console.log('Score: ', score);
+    UserService.postScore(score);
+  };
 
 }]);

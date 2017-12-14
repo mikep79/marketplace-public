@@ -53,19 +53,19 @@ router.get('/items', function (req, res) {
 });
 
 router.put('/buy/:id', function (req, res) {
-  console.log('marketRouter - put /buy');
+  // console.log('marketRouter - put /buy');
   // TODO: Save to the database
   res.sendStatus(200); // <- Temporary
 });
 
 router.put('/sell/:id', function (req, res) {
-  console.log('marketRouter - put /sell');
+  // console.log('marketRouter - put /sell');
   // TODO: Save to the database
   res.sendStatus(200); // <- Temporary
 });
 
 router.get('/leaderboard', function (req, res) {
-  console.log('marketRouter - get /leaderboard');
+  // console.log('marketRouter - get /leaderboard');
   // TODO: Retrieve from the database
   res.send([]); // <- Temporary
 });

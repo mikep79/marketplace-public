@@ -2,7 +2,7 @@
 <div class="container">
   <div class="content">
     <h3 id="welcome" class="lead">Welcome, {{mc.userObject.userName}}! You have {{mc.userObject.money | currency : $}} to spend.</h3>
-
+    <button ng-click="mc.postScore(mc.userObject.money)">Post score</button>
     <div class="item-block" ng-repeat='item in mc.marketItems.data'>
       <!-- <p>{{item.name}}</p> -->
       <p>{{item.cost | currency : $}}</p>

@@ -12,6 +12,7 @@ var indexRouter = require('./routes/index.router');
 var userRouter = require('./routes/user.router');
 var registerRouter = require('./routes/register.router');
 var marketRouter = require('./routes/market.router');
+var scoreRouter = require('./routes/score.router');
 
 // Body parser middleware
 app.use(bodyParser.json());
@@ -31,6 +32,7 @@ app.use(passport.session());
 app.use('/register', registerRouter);
 app.use('/user', userRouter);
 app.use('/market', marketRouter)
+app.use('/score', scoreRouter);
 // Catch all bucket, must be last!
 app.use('/', indexRouter);
 

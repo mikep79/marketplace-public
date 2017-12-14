@@ -43,7 +43,8 @@ See the array in the `market.router.js` file. Items are returned by the `/market
 - [x] Client will check for updates every 8 seconds
 - [x] Correct error of item price going below $0.00.
 - [x] Change price set to between .50 and 4.99.
-- [ ] Create database for high scores.
+- [x] Post score functionality.
+- [ ] Post score to database, write schema for scores in new document.
 - [ ] Create DOM display of high scores in leaderboard.
 - [ ] Leaderboard page that displays the top 10 users ranked by the most cash on hand
 - [ ] Leaderboard is refreshed every 10 seconds automatically

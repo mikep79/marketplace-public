@@ -6,21 +6,17 @@ myApp.factory('UserService', ['$http', '$location', function($http, $location){
     data: []
   };
 
-
   return {
     userObject : userObject,
     marketItems : marketItems,
-
 
     getMarket : function(){
       // console.log('marketItems function works')
       $http.get('/market/items').then(function(response) {
         // console.log('marketItems response', response);
         marketItems.data = response.data;
-      })        
+      });
     },    
-
-  
 
     getuser : function(){
       console.log('UserService -- getuser');
@@ -51,8 +47,18 @@ myApp.factory('UserService', ['$http', '$location', function($http, $location){
     },
     startPrice : function(){
       console.log('startPrice');
-    }
-  };
+    },
 
+    postScore : function(score){
+      // console.log('Service postScore func called with score: ', score);
+      var newScore = {
+        data: score
+      };
+      $http.post('/score', newScore).then(function(response) {
+        console.log('Response from postScore call: ', response);
+      });
+    }
+
+  };
 
 }]);

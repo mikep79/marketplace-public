@@ -6,7 +6,7 @@ var User = require('../models/user.js');
 // Only runs during authentication
 // Stores info on req.session.passport.user
 passport.serializeUser(function(user, done) {
-  console.log('userStrategy -- serialized: ', user);
+  // console.log('userStrategy -- serialized: ', user);
   done(null, user.id);
 });
 
@@ -18,8 +18,8 @@ passport.deserializeUser(function(id, done) {
     if(err) {
       done(err);
     }
-    console.log('userStrategy -- deserializeUser');
-    console.log('-----------------------------------------------\ndeserialized: ', user.id);
+    // console.log('userStrategy -- deserializeUser');
+    // console.log('-----------------------------------------------\ndeserialized: ', user.id);
     done(null, user);
   });
 });
@@ -35,7 +35,7 @@ passport.use('local', new localStrategy({
       if(err) {
         throw err;
       }
-      console.log('userStrategy -- User.findOne');
+      // console.log('userStrategy -- User.findOne');
       // user variable passed to us from Mongoose if it found a match to findOne() above
       if(!user) {
         // user not found
