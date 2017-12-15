@@ -7,20 +7,32 @@
     </p>
     <!-- <button ng-click="mc.postScore(mc.userObject.money)">Post score</button>
     <button ng-click="mc.showScore()">Display score</button> -->
-    <div class="item-block" ng-repeat='item in mc.marketItems.data'>
-      <!-- <p>{{item.name}}</p> -->
-      <p>{{item.cost | currency : $}}</p>
-      <p>
-        <img ng-src="images/{{ item.name }}.png" height="100px" />
-      </p>
-      <button ng-click="mc.buyFruit(item.cost, item.id)">Buy</button>
-      <button ng-click="mc.sellFruit(item.cost, item.id)">Sell</button>
-      <p>
-        Quantity: {{ mc.quantity[item.id] }}
-      </p>
-      <p>
-        Average: {{ mc.average[item.id] | currency }}
-      </p>
+    <div id="items-container">
+      <div class="item-block" ng-repeat='item in mc.marketItems.data'>
+        <!-- <p>{{item.name}}</p> -->
+        <div class="item-cost-block">
+          <div class="item-cost">{{item.cost | currency : $}}</div>
+        </div>
+        <div class="itemPicBlock">
+          <img class="itemPic" ng-src="images/{{ item.name }}.png" />
+        </div>
+        <div class="tradeBtnBlock">
+          <span class="tradeBtnContent">
+            <button class="tradeBtn" ng-click="mc.buyFruit(item.cost, item.id)">Buy</button>
+            <button class="tradeBtn" ng-click="mc.sellFruit(item.cost, item.id)">Sell</button>
+          </span>
+        </div>
+        <div class="quantityBlock">
+          <div class="quantity">
+            {{ mc.quantity[item.id] }}
+          </div>
+        </div>
+        <div class="averageBlock">
+          <div class="average">
+            Average Price: {{ mc.average[item.id] | currency }}
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
