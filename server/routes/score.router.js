@@ -12,7 +12,7 @@ router.post('/', function (req, res) {
     //     }
     // );
     // console.log('High score posted for user ', playerName, ' with scoreData: ', scoreData);
-    dbScore.updateOne({}, {$set: {'name': playerName, 'score': scoreData} }, function (err) {
+    dbScore.updateOne({}, {$set: {'name': playerName, 'score': scoreData} }, { upsert: true }, function (err) {
         if (err) {
             console.log('Post Score error: ', err);
             res.sendStatus(500);
