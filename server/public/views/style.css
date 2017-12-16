@@ -98,6 +98,36 @@ li a:hover {
     font-size: 20pt;
 }
 
+#statsBlock {
+    width: 800px;
+}
+
+#highScoreBlock {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 12pt;
+    float: right;
+}
+
+#highScoreText {
+    margin: 5px;
+}
+
+#highScoreData {
+    margin: 5px;
+    float: right;
+}
+
+#wallet {
+    /* font-family: 'Orbitron', sans-serif; */
+    font-family: 'Fredoka One', cursive;
+    font-size: 30pt;
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+
 /* market items: */
 #items-container {
     width: 800px;

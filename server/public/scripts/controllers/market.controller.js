@@ -48,7 +48,7 @@ myApp.controller('MarketController', ['UserService', '$interval', function (User
     // console.log('controller market items: ', vm.marketItems);
   };
 
-  // $interval(vm.getMarketItems, 8000);
+  $interval(vm.getMarketItems, 8000);
 
 
   vm.buyFruit = function (itemCost, id) {

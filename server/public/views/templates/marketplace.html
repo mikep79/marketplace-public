@@ -1,10 +1,20 @@
 <div ng-include="'views/partials/nav.html'" ng-init="mc.getMarketItems()"></div>
 <div class="container">
   <div class="content">
-    <h3 id="welcome" class="lead">Welcome, {{mc.userObject.userName}}! You have {{mc.userObject.money | currency : $}} to spend.</h3>
-    <p>
-      High score: {{ mc.scoreObject.data[0].name }}, {{ mc.scoreObject.data[0].score | currency: $ }}
-    </p>
+    <div id="statsBlock">
+      <div id="highScoreBlock">
+        <div id="highScoreText">
+          High score
+        </div>
+        <div id="highScoreData">
+          {{ mc.scoreObject.data[0].name }} - {{ mc.scoreObject.data[0].score | currency: $ }}
+        </div>
+      </div>
+      <p id="wallet">
+        {{mc.userObject.money | currency : $}}
+      </p>
+    </div>
+    <!-- {{mc.userObject.userName}}:  -->
     <!-- <button ng-click="mc.postScore(mc.userObject.money)">Post score</button>
     <button ng-click="mc.showScore()">Display score</button> -->
     <div id="items-container">
