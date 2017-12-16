@@ -93,13 +93,135 @@ li a:hover {
 }
 
 /* added */
-.item-block{
-    float: left;
-    margin: 20px;
-    width: 200px;    
-}
-
 #title{
     font-family: 'Fredoka One', cursive;
     font-size: 20pt;
+}
+
+#statsBlock {
+    width: 800px;
+}
+
+#highScoreBlock {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 12pt;
+    float: right;
+}
+
+#highScoreText {
+    margin: 5px;
+}
+
+#highScoreData {
+    margin: 5px;
+    float: right;
+}
+
+#wallet {
+    /* font-family: 'Orbitron', sans-serif; */
+    font-family: 'Fredoka One', cursive;
+    font-size: 30pt;
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+
+/* market items: */
+#items-container {
+    width: 800px;
+}
+
+.item-block {
+    float: left;
+    margin: 20px;
+    width: 200px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+    background-color: rgba(0, 0, 255, 0.377);
+    transition: all 0.2s ease 0s;
+}
+
+.item-block:hover {
+    background-color: blue;
+    transition: all 0.2s ease 0s;
+}
+
+.item-cost-block {
+    display: table;
+    height: 40px;
+    margin: auto;
+    width: 120px;
+}
+
+.item-cost {
+    font-family: 'Orbitron', sans-serif;
+    background-color: black;
+    color: yellow;
+    font-size: 20pt;
+    text-align: center;
+    font-weight: lighter;
+    display: table-cell;
+    vertical-align: middle;
+    padding-top: 5px;
+}
+
+.itemPicBlock {
+    margin: auto;
+    margin: 20px 0px 20px 0px;
+}
+
+.itemPic {
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+
+.tradeBtnBlock {
+    display: flex;
+    justify-content: center;
+    /* display: block;
+    margin: auto; */
+}
+
+/* .tradeBtnContent {
+
+} */
+
+.tradeBtn {
+    width: 90px;
+    height: 30px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    background-color: rgb(194, 218, 88);
+    /* transition: all 0.2s ease 0s; */
+}
+
+.tradeBtn:hover {
+    color: white;
+    background-color: rgb(79, 88, 37);
+    /* transition: all 0.2s ease 0s; */
+}
+
+/* eliminate blue border around buttons */
+.tradeBtn:focus {
+    outline: 0
+}
+
+.quantityBlock {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px 10px 0px;
+}
+
+.averageBlock {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px 10px 0px;
 }
