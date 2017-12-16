@@ -1,9 +1,15 @@
 <div class="navbar" ng-controller="NavController as nc">
   <div class="container">
     <ul>
-      <li><a href="#/marketplace">Market Place</a></li>
+      <div class="navBarItem" id="titleMini">
+        The Market Place
+      </div>
+      <!-- <li><a href="#/marketplace">Market Place</a></li> -->
       <!-- <li><a href="#/leaderboard">Leaderboard</a></li> -->
-      <li style="float:right"><a href="" ng-click="nc.userService.logout()">Log Out</a></li>
+      <!-- <li style="float:right"><a id="titleMini" href="" ng-click="nc.userService.logout()">Log Out</a></li> -->
+      <div class="navBarItem" style="float: right">
+        <a id="titleMini" href="" ng-click="nc.userService.logout()">Log Out</a>
+      </div>
     </ul>
   </div>
 </div>

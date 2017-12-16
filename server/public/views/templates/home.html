@@ -1,19 +1,26 @@
+<div id="title">
+  The Market Place
+</div>
 <div class="container">
   <div class="content">
-  <h2 class="lead">Login</h2>
+    <div id="titleMini" class="fontOne" style="margin-bottom: 10px;">
+      Make the most amount of cash in 2 minutes. Prices change often - buy low, sell high!
+    </div>
     <h2 class="lead alert alert-danger" role="alert" ng-if="lc.message != ''">{{lc.message}}</h2>
     <form ng-submit="lc.login()">
       <div>
-          <label for="username">Username:</label>
-          <input type="text" ng-model="lc.user.username" />
+        <!-- <label for="username">Username:</label> -->
+        <input class="textInput" type="text" ng-model="lc.user.username" placeholder="Username" />
       </div>
       <div>
-          <label for="password">Password:</label>
-          <input type="password" ng-model="lc.user.password" />
+        <!-- <label for="password">Password:</label> -->
+        <input class="textInput" type="password" ng-model="lc.user.password" placeholder="Password" />
       </div>
       <div>
-          <input class="btn btn-default" type="submit" name="submit" value="Log In" />
-          <a href="#register">Register</a>
+        <input class="userBtn colorOne" type="submit" name="submit" value="Log In" />
+      </div>
+      <div class="fontOne container">
+        Don't have an account? <a href="#register">Register</a> to post your high scores!
       </div>
     </form>
   </div>
