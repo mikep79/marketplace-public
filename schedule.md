@@ -50,7 +50,7 @@ See the array in the `market.router.js` file. Items are returned by the `/market
 - [x] Use updateOne syntax to update high score instead of save().
 - [x] POST newScore function runs whenever high score is broken (if statement under sell function).
 - [x] Style item display.
-- [ ] Remove header color, format title.
+- [x] Remove header color, format title.
 - [ ] Style high score display.
 - [ ] Add time limit to game.
 - [ ] Add if statement if guest playing for postScore(). Add link to main page to play as guest.

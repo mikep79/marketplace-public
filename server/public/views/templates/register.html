@@ -1,18 +1,23 @@
+<div id="title">
+    The Market Place
+  </div>
 <div class="container">
   <div class="content">
-    <h2 class="lead">Register User</h2>
-    <h2 class="lead alert alert-danger" role="alert" ng-if="lc.message != ''">{{lc.message}}</h2>
+    <div id="titleMini" class="fontOne" style="margin-bottom: 10px;">
+      Enter a new username and password.
+    </div>
+    <div class="fontOne error" role="alert" ng-if="lc.message != ''">
+      {{lc.message}}
+    </div>
     <form ng-submit="lc.registerUser()">
       <div>
-          <label for="username">Username:</label>
-          <input type="text" ng-model="lc.user.username" />
+        <input class="textInput" type="text" ng-model="lc.user.username" placeholder="Username" />
       </div>
       <div>
-          <label for="password">Password:</label>
-          <input type="password" ng-model="lc.user.password" />
+        <input class="textInput" type="password" ng-model="lc.user.password" placeholder="Password" />
       </div>
-      <input class="btn btn-default" type="submit" name="submit" value="Register" />
-      <a href="#home">Cancel</a>
+      <input class="userBtn colorOne" type="submit" name="submit" value="Register" />
+      <a href="#home"><button class="userBtn colorOne">Back</button></a>
     </form>
   </div>
 </div>
