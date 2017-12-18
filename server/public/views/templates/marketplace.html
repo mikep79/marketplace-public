@@ -2,6 +2,14 @@
 <div class="container">
   <div class="content">
     <div id="statsBlock">
+      <div id="timerBlock">
+        <div ng-show="mc.gameOn" class="timerTxt fontOne">
+          <timer interval="1000" countdown="120">{{countdown}}</timer>
+        </div>
+        <div ng-hide="mc.gameOn" class="timerTxt fontOne">
+          Time's up!
+        </div>
+      </div>
       <div id="highScoreBlock">
         <div id="highScoreText">
           High score
@@ -46,3 +54,7 @@
     </div>
   </div>
 </div>
+
+<!-- timer test buttons: -->
+<!-- <button ng-click="startTimer()" ng-disabled="timerRunning">Start Timer</button> -->
+<!-- <button ng-click="stopTimer()" ng-disabled="!timerRunning">Stop Timer</button> -->

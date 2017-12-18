@@ -1,0 +1,21 @@
+{
+  "name": "bowerInit",
+  "description": "bower for timer",
+  "main": "index.html",
+  "authors": [
+    "Mike Pettman <mp_palmatum@yahoo.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/mikep79/marketplace-public",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-timer": "^1.3.5"
+  }
+}

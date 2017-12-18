@@ -297,3 +297,12 @@ a {
 .error {
     color: red;
 }
+
+.timerTxt {
+    color: red;
+    font-size: 30pt;
+}
+
+#timerBlock {
+    float: left;
+}
