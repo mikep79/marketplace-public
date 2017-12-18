@@ -106,7 +106,7 @@ myApp.controller('MarketController', ['UserService', '$interval', '$scope', func
   // call on page load
   vm.showScore();
 
-
+  // timer logic
   $scope.timerRunning = true;
   $scope.startTimer = function () {
     $scope.$broadcast('timer-start');
@@ -117,7 +117,7 @@ myApp.controller('MarketController', ['UserService', '$interval', '$scope', func
     $scope.timerRunning = false;
   };
   $scope.$on('timer-stopped', function (event, data) {
-    console.log('Timer Stopped - data = ', data);
+    // console.log('Timer Stopped - data = ', data);
   });
 
 }]);

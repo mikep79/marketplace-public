@@ -10,6 +10,9 @@
           Time's up!
         </div>
       </div>
+      <div id="walletBlock">
+        {{mc.userObject.money | currency : $}}
+      </div>
       <div id="highScoreBlock">
         <div id="highScoreText">
           High score
@@ -18,14 +21,8 @@
           {{ mc.scoreObject.data[0].name }} - {{ mc.scoreObject.data[0].score | currency: $ }}
         </div>
       </div>
-      <p id="wallet">
-        {{mc.userObject.money | currency : $}}
-      </p>
     </div>
-    <!-- {{mc.userObject.userName}}:  -->
-    <!-- <button ng-click="mc.postScore(mc.userObject.money)">Post score</button>
-    <button ng-click="mc.showScore()">Display score</button> -->
-    <div id="items-container">
+    <div id="itemsContainer">
       <div class="item-block" ng-repeat='item in mc.marketItems.data'>
         <!-- <p>{{item.name}}</p> -->
         <div class="item-cost-block">
@@ -54,6 +51,10 @@
     </div>
   </div>
 </div>
+
+<!-- {{mc.userObject.userName}}:  -->
+<!-- <button ng-click="mc.postScore(mc.userObject.money)">Post score</button> -->
+<!-- <button ng-click="mc.showScore()">Display score</button> -->
 
 <!-- timer test buttons: -->
 <!-- <button ng-click="startTimer()" ng-disabled="timerRunning">Start Timer</button> -->
