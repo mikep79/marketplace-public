@@ -1,6 +1,4 @@
-<div id="title">
-    Market Mania
-  </div>
+<div ng-include="'views/partials/header.html'"></div>
 <div class="container">
   <div class="content">
     <div id="titleMini" class="fontOne" style="margin-bottom: 10px;">
@@ -17,7 +15,9 @@
         <input class="textInput" type="password" ng-model="lc.user.password" placeholder="Password" />
       </div>
       <input class="userBtn colorOne" type="submit" name="submit" value="Register" />
-      <a href="#home"><button class="userBtn colorOne">Back</button></a>
+      <a href="#home">
+        <button class="userBtn colorOne">Back</button>
+      </a>
     </form>
   </div>
 </div>
