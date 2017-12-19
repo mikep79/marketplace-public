@@ -319,3 +319,15 @@ a {
 .error {
     color: red;
 }
+
+@keyframes scoreAnimate {
+    0%   {color: black;}
+    75%  {color: yellow;}
+    100% {color: black;}
+}
+
+/* element to apply animation to */
+.highScoreBlockAnimation {
+    animation-name: scoreAnimate;
+    animation-duration: 1.5s;
+}

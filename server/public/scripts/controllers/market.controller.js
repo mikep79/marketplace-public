@@ -1,4 +1,4 @@
-myApp.controller('MarketController', ['UserService', '$interval', '$scope', function (UserService, $interval, $scope) {
+myApp.controller('MarketController', ['UserService', '$interval', '$scope', '$timeout', function (UserService, $interval, $scope, $timeout) {
   // console.log('MarketController created');
   var vm = this;
   vm.userService = UserService;
@@ -43,6 +43,7 @@ myApp.controller('MarketController', ['UserService', '$interval', '$scope', func
   };
   vm.gameDuration = 0;
   vm.gameOn = true;
+  vm.highScore = false;
 
   // get new prices every 8 seconds
   vm.getMarketItems = function () {
@@ -96,6 +97,9 @@ myApp.controller('MarketController', ['UserService', '$interval', '$scope', func
     console.log('Score: ', score);
     UserService.postScore(score);
     vm.showScore();
+    // show new high score animation:
+    vm.highScore = true;
+    $timeout(function() {vm.highScore = false}, 2000);
   };
 
   vm.showScore = function () {

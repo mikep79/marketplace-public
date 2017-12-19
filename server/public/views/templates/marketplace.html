@@ -13,7 +13,7 @@
       <div id="walletBlock">
         {{mc.userObject.money | currency : $}}
       </div>
-      <div id="highScoreBlock">
+      <div id="highScoreBlock" ng-class="{highScoreBlockAnimation: mc.highScore}">
         <div id="highScoreText">
           High score
         </div>
@@ -52,10 +52,11 @@
   </div>
 </div>
 
+<!-- Score testing buttons: -->
 <!-- {{mc.userObject.userName}}:  -->
 <!-- <button ng-click="mc.postScore(mc.userObject.money)">Post score</button> -->
 <!-- <button ng-click="mc.showScore()">Display score</button> -->
 
-<!-- timer test buttons: -->
+<!-- Timer test buttons: -->
 <!-- <button ng-click="startTimer()" ng-disabled="timerRunning">Start Timer</button> -->
 <!-- <button ng-click="stopTimer()" ng-disabled="!timerRunning">Stop Timer</button> -->
