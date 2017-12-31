@@ -137,6 +137,10 @@ a {
 
 /* GAME PAGE */
 
+.center {
+    max-width: 960px;
+    margin: auto;
+}
 
 #statsBlock {
     width: 800px;
