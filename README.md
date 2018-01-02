@@ -5,6 +5,7 @@ Market Mania is a game app that allows a player to register and login, and purch
 <p>
 <img src="screenshots/1.png" width="500px" />
 </p>
+<hr>
 <p>
 <img src="screenshots/2.png" width="500px" />
 </p>
