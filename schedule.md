@@ -51,8 +51,8 @@ See the array in the `market.router.js` file. Items are returned by the `/market
 - [x] POST newScore function runs whenever high score is broken (if statement under sell function).
 - [x] Style item display.
 - [x] Remove header color, format title.
-- [ ] Style high score display.
-- [ ] Add time limit to game.
+- [x] Style high score display.
+- [x] Add time limit to game.
 - [ ] Add if statement if guest playing for postScore(). Add link to main page to play as guest.
 - [ ] Add time stamp to high score postings.
 - [ ] Host on Heroku

@@ -3,7 +3,10 @@ Market Mania is a game app that allows a player to register and login, and purch
 
 <br>
 <p>
-<img src="server/public/images/pic1.png" width="450px" />
+<img src="screenshots/1.png" width="500px" />
+</p>
+<p>
+<img src="screenshots/2.png" width="500px" />
 </p>
 <br>
 
@@ -12,6 +15,11 @@ JavaScript, AngularJS, Node.js, Express, MongoDB, HTML5, CSS, Angular Timer dire
 
 ## Getting started
 Run ```npm install``` in terminal, then ```npm start```.
+
+## Next Steps
+* Create a sell-all-items button.
+* Add time stamp to high score.
+* Integrate multiple high scores feature and high scores page.
 
 ## Authors
 Mike Pettman
